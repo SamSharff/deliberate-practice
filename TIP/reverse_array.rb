@@ -30,7 +30,7 @@ def reverse(input_array)
 end
 
 
-p reverse ([1, 2, 3, 4, 5])
+# p reverse ([1, 2, 3, 4, 5])
 # Output: [5, 4, 3, 2, 1]
 
 # p reverse (["hello", "goodbye", 3, 4, 5])
