@@ -46,9 +46,20 @@ p map_double([])
 # Output: []
 
 
-# # ALTERNATIVE WHILE LOOP:
+# # ALTERNATIVE LOOPS:
+
+### CREATES VARIABLE FOR FOR DOUBLED NUMBER ###
 # while index < input_array.length
 #   doubled = input_array[index] * 2
 #   new_array << doubled
 #   index += 1
 # end
+
+### EACH LOOP ###
+# input_array = [-4, -10]
+# new_array = []
+
+# input_array.each do |number|
+#   new_array << number * 2
+# end
+#   p new_array
