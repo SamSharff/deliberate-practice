@@ -8,50 +8,21 @@
 # output: [13]
 
 
-# define function sorted_primes, params (input_array)remember to end
+# Define sorted_primes function with (input_array) parameter
+# Create prime_array = [] to store the prime numbers found in input_array
+# Using a while loop, iterate through each number in input_array assigning each value to the current_num variable. Isolate each number, breaking it down further into a range (so '7' becomes 1, 2, 3, 4, 5, 6, 7) called "checking_prime_array", which starts as empty but accepts the range of each current_num. 
+# Create a count variable. Looping through checking_prime_array, create conditional. If current_num is divisible by one of the numbers (current_number_inner) in the checking_prime_array, count goes up by one; if count reaches >= 3, then break out of that loop and start on the next number in the range. If the count variable stays at <= 2, that current_num is prime and should be shoveled into the prime_array, and the loop should continue through the rest of the input_array.
+# Remember to return prime_array.sort so primes are sorted
+# Translate to js
 
-# empty array prime_array
-# while loop
-# index = 0
-# current_num = inputarray[index]
-  # prime is div by 1 and itself (remainder of 0)
-    # --> no -numbers
-    #  if number at index has more than two divider = prime
-      # shovel into prime_array
-    
-
-#if number is not prime, prompt "No prime numbers were included"
-# sorted_array = prime_array.sort
-# return sorted_array
-# translate to js
-
-# def sorted_primes(input_array)
-#   prime_array = []
-#   index = 0
-
-#   while index < input_array.length
-#     current_num = input_array[index]
-#     prime = current_num % current_num == 0  && current_num % 1 == 0  
-#       if current_num == prime
-#         p "prime"
-#         prime_array << current_num
-#       end
-#     index += 1
-#   end
-#   return prime_array
-# end
-
-# p sorted_primes([2, 10, 13, 45, 33])
-# # output [2, 13]
-
-def prime(input_array)
+def sorted_primes(input_array)
   prime_array = []
   index = 0
   checking_prime_array = []
 
   while index < input_array.length
     current_num = input_array[index]
-    checking_prime_array << [*1..current_num] # makes current_num into a range to create second loop and iterate
+    checking_prime_array << [*1..current_num] # ISSUE: converts current_num into a range, but creates array
       checking_prime_index = 0
       count = 0
       while checking_prime_index < checking_prime_array.length
@@ -68,9 +39,8 @@ def prime(input_array)
       end
     index += 1
   end
-  return prime_array
+  return prime_array.sort
 end
 
-p prime([2, 10, 13, 45, 33])
-
+p sorted_primes([2, 10, 13, 45, 33])
 
