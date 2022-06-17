@@ -1,3 +1,5 @@
+# LEETCODE PROBLEM
+
 # Given an integer n, return a string array answer (1-indexed) where:
 
 # answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
@@ -18,9 +20,7 @@
 # Input: n = 15
 # Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 
-# Constraints:
-
-# 1 <= n <= 104
+# MY SOLUTION #
 
 # @param {Integer} n
 # @return {String[]}
@@ -42,6 +42,8 @@
 
 # p fizz_buzz(3)
 
+# TIP VERSION OF FIZZBUZZ #
+
 # Given an array of numbers 1 -> 100, write a function that returns that same set of numbers except:
 # - If a number is divisible by 3, substitute the number for 'FIZZ'
 # - If a number is divisible by 5, substitute the number for 'BUZZ'
@@ -62,24 +64,44 @@
 # return output_array
 # when calling function, make input ([1..100])
 
-def fizz(input)
-  output_array = []
-  index = 0
+# MY SOLUTION #
 
-  while index < input.length
-    number = input[index]
-    if number % 3 == 0 && number % 5 == 0
+# def fizz(input)
+#   output_array = []
+#   index = 0
+
+#   while index < input.length
+#     number = input[index]
+#     if number % 3 == 0 && number % 5 == 0
+#       output_array << "FIZZBUZZ"
+#     elsif number % 3 == 0
+#       output_array << "FIZZ"
+#     elsif number % 5 == 0
+#       output_array << "BUZZ"
+#     else
+#       output_array << number
+#     end
+#     index += 1
+#   end
+#   return output_array
+# end
+
+# pp fizz ([*1..100])
+
+def fizz_buzz(numbers)
+  output_array = []
+  numbers.each do |num|
+    if num % 3 == 0 && num % 5 == 0
       output_array << "FIZZBUZZ"
-    elsif number % 3 == 0
+    elsif num % 3 == 0
       output_array << "FIZZ"
-    elsif number % 5 == 0
+    elsif num % 5 == 0
       output_array << "BUZZ"
     else
-      output_array << number
+      output_array << num
     end
-    index += 1
   end
   return output_array
 end
 
-pp fizz ([*1..100])
+p fizz_buzz(1..100)
