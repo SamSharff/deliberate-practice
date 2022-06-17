@@ -4,4 +4,4 @@ new_array = []
 input_array.each do |number|
   new_array << number * 2
 end
-  p new_array
+p new_array

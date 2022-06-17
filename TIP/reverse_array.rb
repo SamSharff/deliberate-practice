@@ -18,7 +18,7 @@
 # iterate index -= 1 // THIS MAY BE WRONG //
 # Return reverse_array
 
-def reverse(input_array) 
+def reverse(input_array)
   reverse_array = []
   index = input_array.length - 1  # => 5
 
@@ -29,8 +29,7 @@ def reverse(input_array)
   return reverse_array
 end
 
-
-# p reverse ([1, 2, 3, 4, 5])
+p reverse ([1, 2, 3, 4, 5])
 # Output: [5, 4, 3, 2, 1]
 
 # p reverse (["hello", "goodbye", 3, 4, 5])
@@ -39,19 +38,7 @@ end
 # p reverse ([])
 # # Output: [nil]
 
-
-
-
-
-
-
-
-
-
-
-
-
-# def reverse(input_array) 
+# def reverse(input_array)
 #   reverse_array = []
 #   index = -1     # index -1
 
@@ -71,7 +58,3 @@ end
 
 # p reverse ([])
 # # Output: [nil]
-
-
-
-
