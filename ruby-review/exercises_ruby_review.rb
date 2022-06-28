@@ -38,18 +38,18 @@
 # 5.  mac and cheese
 
 
-list = []
-puts "Please enter your five favorite foods"
-5.times do 
-  food = gets.chomp
-  list << food
-end
+# list = []
+# puts "Please enter your five favorite foods"
+# 5.times do 
+#   food = gets.chomp
+#   list << food
+# end
 
-index = 0
-count = 1
-while index < list.length
-  puts "#{count}. #{list[index]}"
-  count +=1
-  index += 1
-end
+# index = 0
+# count = 1
+# while index < list.length
+#   puts "#{count}. #{list[index]}"
+#   count +=1
+#   index += 1
+# end
 
