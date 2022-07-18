@@ -58,4 +58,4 @@ def reduce_product(input_array)
   return product
 end
 
-p reduce_product([1, 2, 3, 4])
+p reduce_product([24, 2, 4, -1])
