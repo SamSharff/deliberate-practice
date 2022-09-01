@@ -19,7 +19,7 @@
 def two_sum([input_array] target)
   indices = []
 
-  
+
   return indices
 end
 
