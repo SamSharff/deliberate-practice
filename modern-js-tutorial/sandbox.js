@@ -19,3 +19,22 @@ console.log(points);
 // var
 var score = 75;
 console.log(score);
+
+// strings
+console.log("this is a string");
+
+let email = "sam@example.com";
+console.log(email);
+
+// concatenation
+let firstName = "Samantha";
+let lastName = "Sharff";
+
+let fullName = firstName + " " + lastName;
+console.log(fullName);
+
+// getting characters
+
+// string length
+
+// string methods
