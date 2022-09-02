@@ -1,48 +1,13 @@
-// let
-let age = 25;
-let year = 2019;
-
-console.log(age, year);
-
-age = 30;
-console.log(age);
-
-// const
-const points = 100;
-console.log(points);
-
-// *** won't work *** //
-// points = 50;
-// console.log(points);
-// *** won't work *** //
-
-// var
-var score = 75;
-console.log(score);
-
-// strings
-console.log("this is a string");
+//*** common string methods ***//
 
 let email = "sam@example.com";
-console.log(email);
 
-// concatenation
-let firstName = "Samantha";
-let lastName = "Sharff";
+// let result = email.lastIndexOf("e");
 
-let fullName = firstName + " " + lastName;
+// let result = email.slice(2, 3);
 
-// getting characters
-console.log(fullName[2]);
+// let result = email.substr(3, 7); (starting index, characters to retrieve)
+// note: substr is now deprecated
 
-// string length
-console.log(fullName.length);
-
-// string methods
-console.log(fullName.toUpperCase());
-
-let result = fullName.toLowerCase();
-console.log(result, fullName);
-
-let index = email.indexOf("@");
-console.log(index);
+// let result = email.replace("s", "l");
+console.log(result);
