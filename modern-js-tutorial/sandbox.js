@@ -1,21 +1,12 @@
-// template strings (template literal)
-const title = "Best Reads of 2022";
-const author = "Sam";
-const likes = 3000;
+let ninjas = ["shaun", "ryu", "chun-li"];
+// ninjas[1] = "sam";
+// console.log(ninjas[1]);
 
-// concatenation way
-// let result = "The title called " + title + " by " + author + " has " + likes + " likes! Hooray!";
-// console.log(result);
+// let ages = [20, 35, 30, 35];
+// console.log(ages[2]);
 
-// template string way
-// let result = `The title called ${title} by ${author} has ${likes} likes! Hooray!`;
-// console.log(result);
+let random = ["shaun", "crystal", 30, 20];
+console.log(random);
 
-// creating html templates
-
-let html = `
-<h2>${title}</h2>
-<p>By ${author}<p>
-<span>This blog has ${likes} likes.</span>
-`;
-console.log(html);
+const name = null ?? "Sam";
+console.log(name);
