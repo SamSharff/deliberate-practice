@@ -33,19 +33,9 @@
 # look at a list, find the last number in the list
 # print that number
 
-def print_last_index(input_array)
-  input_array.index { |index| index == 3 }
+def print_last_index(array)
+  last_index = array.length - 1
+  return last_index
 end
 
-p print_last_index([1, 2, 6, 9, 3])
-# def print_last_index(input_array)
-#   index = 0
-#   last_index = input_array.length[-1]
-
-#   while index = input_array.length
-#     p [index]
-#     index += 1
-#   end
-# end
-
-# print_last_index([1, 2, 6, 9, 3])
+p print_last_index([45, 6765, 4, 45, 6765, 4, 45, 6765, 4, 45, 6765, 4])
