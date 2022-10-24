@@ -34,7 +34,18 @@
 # print that number
 
 def print_last_index(input_array)
-  return input_array[-1]
+  input_array.index { |index| index == 3 }
 end
 
 p print_last_index([1, 2, 6, 9, 3])
+# def print_last_index(input_array)
+#   index = 0
+#   last_index = input_array.length[-1]
+
+#   while index = input_array.length
+#     p [index]
+#     index += 1
+#   end
+# end
+
+# print_last_index([1, 2, 6, 9, 3])
